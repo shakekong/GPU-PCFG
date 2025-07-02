@@ -10,8 +10,12 @@
 
 #correctness_guess和PCFG文件中，如果需要运行代码，请将这两个文件中并行部分取消注释，并注释掉相应的串行部分
 
-#并行部分：const int BATCH_SIZE = 4; // 可调
+#并行部分：
+
+          const int BATCH_SIZE = 4; // 可调
+
           q.PopNextBatch(BATCH_SIZE);
+          
           class PriorityQueue的私有成员变量以及函数 BatchGenerate 和 PopNextBatch
 
 
